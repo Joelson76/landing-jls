@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor targets so the fixed header doesn't cover section titles */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    @apply bg-petrol-900 text-cream font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-aqua/30 text-cream;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom scrollbar — keeps the dark tech feel */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-petrol-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-petrol-600 rounded-full;
+    border: 2px solid theme("colors.petrol.950");
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-petrol-500;
+  }
+}
+
+@layer components {
+  /* Blueprint grid — the signature background texture */
+  .bp-grid {
+    background-image:
+      linear-gradient(to right, rgba(63, 224, 207, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(63, 224, 207, 0.055) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Eyebrow label used above section titles */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-aqua/80;
+  }
+
+  /* Gradient text for hero emphasis words */
+  .text-gradient {
+    @apply bg-gradient-to-r from-aqua-soft via-aqua to-aqua-deep bg-clip-text text-transparent;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
