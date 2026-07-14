@@ -29,8 +29,8 @@ const systems: SaaS[] = [
     name: "SupriFlow",
     tag: "Gestão de suprimentos",
     Icon: Boxes,
-    host: "appsuprimentos.vercel.app",
-    url: "https://appsuprimentos.vercel.app/",
+    host: "supriflow.jlstecnologia.com.br",
+    url: "https://supriflow.jlstecnologia.com.br/",
     accent: "text-aqua",
     pitch:
       "Chega de controlar compras no caderno ou em planilha perdida. O SupriFlow organiza pedidos, fornecedores e todo o fluxo de compras num lugar só — você sabe o que foi pedido, o que já chegou e quanto está gastando.",
@@ -46,8 +46,8 @@ const systems: SaaS[] = [
     name: "SafeTrack",
     tag: "Segurança do trabalho (SST)",
     Icon: ShieldCheck,
-    host: "appseguranca.vercel.app",
-    url: "https://appseguranca.vercel.app/",
+    host: "safetrack.jlstecnologia.com.br",
+    url: "https://safetrack.jlstecnologia.com.br/",
     accent: "text-gold",
     pitch:
       "Segurança do trabalho em dia, sem papelada. O SafeTrack controla a entrega de EPIs com assinatura digital e mantém a conformidade da empresa organizada — pronta pra mostrar na fiscalização a qualquer momento.",
@@ -63,8 +63,8 @@ const systems: SaaS[] = [
     name: "FuelDoc",
     tag: "Compliance para postos",
     Icon: Fuel,
-    host: "fueldoc.vercel.app",
-    url: "https://fueldoc.vercel.app/",
+    host: "fueldoc.jlstecnologia.com.br",
+    url: "https://fueldoc.jlstecnologia.com.br/",
     accent: "text-gold",
     pitch:
       "Posto de combustível vive de documento em dia. O FuelDoc reúne todo o dossiê de conformidade do seu posto — formulários APR+FPS e documentos da NR-20 — e ainda te avisa no WhatsApp antes de qualquer prazo vencer.",

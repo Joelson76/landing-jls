@@ -4,9 +4,9 @@ import { WhatsAppIcon } from "@/components/icons";
 import { site, whatsappUrl, mailtoUrl, navLinks } from "@/lib/site";
 
 const systems = [
-  { label: "SupriFlow", href: "https://appsuprimentos.vercel.app/" },
-  { label: "SafeTrack", href: "https://appseguranca.vercel.app/" },
-  { label: "FuelDoc", href: "https://fueldoc.vercel.app/" },
+  { label: "SupriFlow", href: "https://supriflow.jlstecnologia.com.br/" },
+  { label: "SafeTrack", href: "https://safetrack.jlstecnologia.com.br/" },
+  { label: "FuelDoc", href: "https://fueldoc.jlstecnologia.com.br/" },
 ];
 
 export function Footer() {
