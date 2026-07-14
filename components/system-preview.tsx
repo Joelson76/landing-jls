@@ -61,31 +61,13 @@ function Tile({ label, accent }: { label: string; accent: string }) {
 
 /* ── SupriFlow: procurement kanban ─────────────────────────────────────── */
 export function SupriFlowBody() {
-  const cols = ["Pedido", "Aprovado", "Recebido"];
   return (
-    <div>
-      <div className="mb-3 flex items-center justify-between">
-        <Bar w="w-24" accent />
-        <div className="h-5 w-14 rounded-md bg-aqua/20" />
-      </div>
-      <div className="grid grid-cols-3 gap-2">
-        {cols.map((c, i) => (
-          <div key={c} className="rounded-lg border border-white/10 bg-petrol-850/60 p-2">
-            <div className="mb-2 text-[0.55rem] font-semibold uppercase tracking-wider text-mist">{c}</div>
-            <div className="space-y-1.5">
-              <div className="rounded bg-petrol-800 p-1.5">
-                <Bar w="w-full" />
-                <div className="mt-1"><Bar w="w-2/3" /></div>
-              </div>
-              {i < 2 && (
-                <div className="rounded bg-petrol-800 p-1.5">
-                  <Bar w="w-3/4" />
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="relative w-full overflow-hidden rounded-lg">
+      <img
+        src="/supriflow.png"
+        alt="Interface do SupriFlow - Sistema de Gestão de Suprimentos"
+        className="w-full h-auto object-contain"
+      />
     </div>
   );
 }
@@ -93,23 +75,12 @@ export function SupriFlowBody() {
 /* ── SafeTrack: EPI delivery + digital signature ───────────────────────── */
 export function SafeTrackBody() {
   return (
-    <div>
-      <div className="mb-3 grid grid-cols-2 gap-2">
-        <Tile label="EPIs" accent="text-gold" />
-        <Tile label="Entregas" accent="text-aqua" />
-      </div>
-      <div className="space-y-1.5">
-        {[0, 1, 2].map((i) => (
-          <div key={i} className="flex items-center gap-2 rounded-lg border border-white/10 bg-petrol-850/60 px-2.5 py-2">
-            <span className="grid h-4 w-4 place-items-center rounded-sm bg-gold/20 text-gold text-[8px]">✓</span>
-            <Bar w={i === 1 ? "w-1/2" : "w-3/4"} />
-            {/* signature squiggle */}
-            <svg viewBox="0 0 40 12" className="ml-auto h-3 w-10 text-aqua/70" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-              <path d="M1 8c3-6 5 4 8-1s5 3 8-2 6 5 9 1 4-3 4-3" />
-            </svg>
-          </div>
-        ))}
-      </div>
+    <div className="relative w-full overflow-hidden rounded-lg">
+      <img
+        src="/safetrack.png"
+        alt="Interface do SafeTrack - Sistema de Segurança do Trabalho"
+        className="w-full h-auto object-contain"
+      />
     </div>
   );
 }
@@ -117,23 +88,12 @@ export function SafeTrackBody() {
 /* ── FuelDoc: compliance dossier + WhatsApp alerts ─────────────────────── */
 export function FuelDocBody() {
   return (
-    <div>
-      <div className="mb-3 flex items-center justify-between rounded-lg border border-white/10 bg-petrol-850/60 px-2.5 py-2">
-        <div>
-          <div className="text-[0.55rem] font-semibold uppercase tracking-wider text-mist">Dossiê de compliance</div>
-          <div className="mt-1"><Bar w="w-20" accent /></div>
-        </div>
-        <span className="rounded-full bg-gold/20 px-2 py-0.5 text-[0.55rem] font-semibold text-gold">NR-20</span>
-      </div>
-      <div className="space-y-1.5">
-        {["APR + FPS", "Documentos", "Alerta WhatsApp"].map((label, i) => (
-          <div key={label} className="flex items-center gap-2 rounded-lg border border-white/10 bg-petrol-850/60 px-2.5 py-2">
-            <span className={cn("h-2 w-2 rounded-full", i === 2 ? "bg-gold" : "bg-aqua")} />
-            <span className="text-[0.6rem] font-medium text-mist">{label}</span>
-            <div className="ml-auto"><Bar w="w-8" /></div>
-          </div>
-        ))}
-      </div>
+    <div className="relative w-full overflow-hidden rounded-lg">
+      <img
+        src="/fueldoc.png"
+        alt="Interface do FuelDoc - Sistema de Compliance para Postos"
+        className="w-full h-auto object-contain"
+      />
     </div>
   );
 }

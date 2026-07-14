@@ -21,8 +21,8 @@ export const whatsappUrl = `https://wa.me/${site.whatsappNumber}?text=${encodeUR
   site.whatsappMessage,
 )}`;
 
-/** mailto with a helpful default subject. */
-export const mailtoUrl = `mailto:${site.email}?subject=${encodeURIComponent(
+/** Gmail web link with pre-filled recipient and subject. */
+export const mailtoUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${site.email}&su=${encodeURIComponent(
   "Contato pelo site — JLS Tecnologia",
 )}`;
 

@@ -44,6 +44,8 @@ export function FinalCTA() {
             </a>
             <a
               href={mailtoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
             >
               <Mail className="h-5 w-5" />

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Sora, Manrope, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -94,7 +95,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${sora.variable} ${manrope.variable} ${jetbrains.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

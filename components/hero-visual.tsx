@@ -26,36 +26,30 @@ export function HeroVisual() {
         </div>
 
         {/* body */}
-        <div className="space-y-2.5 p-5 font-mono text-[0.8rem] leading-relaxed sm:text-sm">
-          <p>
-            <span className="text-gold">$</span>{" "}
-            <span className="text-cream">deploy supriflow --prod</span>
-          </p>
-          <p className="text-aqua">✓ build concluído · 0 erros</p>
+        <div className="space-y-3 p-6">
+          <div className="rounded-lg bg-petrol-900/60 p-4 border border-white/5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-aqua text-xl">✓</span>
+              <span className="text-cream font-semibold">SupriFlow</span>
+            </div>
+            <p className="text-mist text-sm">Sistema em produção · rodando</p>
+          </div>
 
-          <p className="pt-1">
-            <span className="text-gold">$</span>{" "}
-            <span className="text-cream">status --servidores</span>
-          </p>
-          <p className="text-mist">
-            <span className="text-aqua">●</span> web-01&nbsp;&nbsp;&nbsp;online
-          </p>
-          <p className="text-mist">
-            <span className="text-aqua">●</span> banco&nbsp;&nbsp;&nbsp;&nbsp;online
-          </p>
+          <div className="rounded-lg bg-petrol-900/60 p-4 border border-white/5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-gold text-xl">✓</span>
+              <span className="text-cream font-semibold">SafeTrack</span>
+            </div>
+            <p className="text-mist text-sm">Sistema em produção · rodando</p>
+          </div>
 
-          <p className="pt-1">
-            <span className="text-gold">$</span>{" "}
-            <span className="text-cream">suporte --abrir &quot;PDV travando&quot;</span>
-          </p>
-          <p className="text-mist">
-            → chamado atendido <span className="text-aqua">✓</span>
-          </p>
-
-          <p className="pt-1">
-            <span className="text-gold">$</span>
-            <span className="ml-1 inline-block h-4 w-2 translate-y-0.5 animate-caret-blink bg-aqua" />
-          </p>
+          <div className="rounded-lg bg-petrol-900/60 p-4 border border-white/5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-gold text-xl">✓</span>
+              <span className="text-cream font-semibold">FuelDoc</span>
+            </div>
+            <p className="text-mist text-sm">Sistema em produção · rodando</p>
+          </div>
         </div>
       </div>
 
